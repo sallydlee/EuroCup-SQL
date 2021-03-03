@@ -1,5 +1,5 @@
 SELECT
-match_no, COUNT(*) AS fouls
+match_no, kick_no AS fouls
 FROM euro_cup_2016.penalty_shootout
-GROUP BY match_no
-ORDER BY fouls DESC;
+ORDER BY kick_no DESC
+LIMIT 1;
